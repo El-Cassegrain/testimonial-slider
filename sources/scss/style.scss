@@ -1,0 +1,156 @@
+@import "variables";
+@import "global";
+
+/* Styles */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: $main-font;
+    font-size: 1.1rem;
+    background: url('../../assets/img/pattern-curve.svg') no-repeat bottom left;
+    .img-wrapper {
+        background: #fff url('../img/pattern-bg.svg') no-repeat center center;
+        background-size: contain;
+        position: relative;
+        margin-top: 50px;
+        width: 100%;
+        height: 340px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 270px;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.22);
+        }
+    }
+    button {
+        border: none;
+        background: #fff;
+        padding: 10px 15px;
+        display: block;
+        position: absolute;
+        top: 334px;
+        height: 38px;
+        z-index: 100;
+        cursor: pointer;
+        &:hover, &:focus, &:active {
+            transition: all ease 0.19s 0.09s;
+            background-color: #ededed;
+        }
+        i img {
+            width: 10px;
+            
+        }
+        &.slick-prev {
+            border-top-left-radius: 100px;
+            border-bottom-left-radius: 100px;
+            left: 50%;
+            padding-right: 19px;
+            transform: translateX(-44px)
+        }
+        &.slick-next {
+            border-top-right-radius: 100px;
+            border-bottom-right-radius: 100px;
+            right: 50%;
+            padding-left: 19px;
+            transform: translateX(44px);
+        }
+    }
+    .single-item {
+        blockquote {
+            font-weight: 300;
+            padding: 2rem 10%;
+            letter-spacing: 0.65px;
+            text-align: center;
+            line-height: 1.4rem;
+            position: relative;
+            &::before {
+                content: url('../../assets/img/pattern-quotes.svg');
+                width: 80px;
+                height: 80px;
+                display: block;
+                position: absolute;
+                top: 25%;
+                left: 50%;
+                right: 50%;
+                transform: translate(-50%, -50%);
+            }
+            cite {
+                display: block;
+                margin-top: 25px;
+                font-weight: bold;
+                font-size: 0.87rem;
+                letter-spacing: 0;
+                line-height: normal;
+                span {
+                    display: block;
+                    margin-top: 5px;
+                    font-weight: 400;
+                    color: $gray-blue;
+                    
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 1.5rem;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
+    text-align: center;
+    background-color: $gray-blue;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    body {
+        .img-wrapper {
+            width: 50%;
+            height: 100%;
+            height: 520px;
+            margin: 3rem 0 0 auto;
+            img {
+                height: 420px;
+                width: 420px;
+            }
+        }
+        blockquote {
+            width: 35%;
+            left: 22%;
+            text-align: left !important;
+            position: absolute;
+            display: block;
+            top: -350px;
+            &::before {
+                left: 33% !important;
+                top: 11% !important;
+            }
+            cite {
+                span {
+                    display: inline !important;
+                    padding-left: 7px;
+                }
+            }
+        }
+        button {
+            top: 509px;
+            &.slick-prev {
+                left: 66%;
+                padding-right: 19px;
+                transform: translateX(-44px)
+            }
+            &.slick-next {
+                right: 34%;
+                padding-left: 19px;
+                transform: translateX(44px);
+            }
+        }
+    }
+}

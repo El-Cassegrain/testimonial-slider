@@ -1,0 +1,264 @@
+/* Variables */
+/* Colors */
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/* Global styles */
+/* Meyer Reboot */
+/* line 4, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 25, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 29, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+body {
+  line-height: 1;
+}
+
+/* line 32, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 35, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 38, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 43, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Responsive typography */
+/* line 49, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+html {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 375px) {
+  /* line 52, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+  html {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 53, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/_global.scss */
+  html {
+    font-size: 120%;
+  }
+}
+
+/* Styles */
+/* line 5, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  background: url("../../assets/img/pattern-curve.svg") no-repeat bottom left;
+}
+
+/* line 11, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .img-wrapper {
+  background: #fff url("../img/pattern-bg.svg") no-repeat center center;
+  background-size: contain;
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 21, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .img-wrapper img {
+  width: 270px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.22);
+}
+
+/* line 26, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body button {
+  border: none;
+  background: #fff;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  top: 334px;
+  height: 38px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+/* line 36, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body button:hover, body button:focus, body button:active {
+  transition: all ease 0.19s 0.09s;
+  background-color: #ededed;
+}
+
+/* line 40, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body button i img {
+  width: 10px;
+}
+
+/* line 44, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body button.slick-prev {
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  left: 50%;
+  padding-right: 19px;
+  transform: translateX(-44px);
+}
+
+/* line 51, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body button.slick-next {
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  right: 50%;
+  padding-left: 19px;
+  transform: translateX(44px);
+}
+
+/* line 60, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .single-item blockquote {
+  font-weight: 300;
+  padding: 2rem 10%;
+  letter-spacing: 0.65px;
+  text-align: center;
+  line-height: 1.4rem;
+  position: relative;
+}
+
+/* line 67, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .single-item blockquote::before {
+  content: url("../../assets/img/pattern-quotes.svg");
+  width: 80px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 78, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .single-item blockquote cite {
+  display: block;
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 0.87rem;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* line 85, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+body .single-item blockquote cite span {
+  display: block;
+  margin-top: 5px;
+  font-weight: 400;
+  color: #babacf;
+}
+
+/* line 97, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 1.5rem;
+  padding-top: 0.5rem;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: #babacf;
+  color: white;
+}
+
+/* line 107, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+footer a {
+  color: white;
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 114, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body .img-wrapper {
+    width: 50%;
+    height: 100%;
+    height: 520px;
+    margin: 3rem 0 0 auto;
+  }
+  /* line 119, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body .img-wrapper img {
+    height: 420px;
+    width: 420px;
+  }
+  /* line 124, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body blockquote {
+    width: 35%;
+    left: 22%;
+    text-align: left !important;
+    position: absolute;
+    display: block;
+    top: -350px;
+  }
+  /* line 131, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body blockquote::before {
+    left: 33% !important;
+    top: 11% !important;
+  }
+  /* line 136, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body blockquote cite span {
+    display: inline !important;
+    padding-left: 7px;
+  }
+  /* line 142, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body button {
+    top: 509px;
+  }
+  /* line 144, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body button.slick-prev {
+    left: 66%;
+    padding-right: 19px;
+    transform: translateX(-44px);
+  }
+  /* line 149, C:/Users/Etienne/Desktop/Travaux/frontendmentor/coding-bootcamp-testimonials-slider-master/coding-bootcamp-testimonials-slider-master/sources/scss/style.scss */
+  body button.slick-next {
+    right: 34%;
+    padding-left: 19px;
+    transform: translateX(44px);
+  }
+}
+
+/*# sourceMappingURL=../../assets/css/style.map */
