@@ -1,29 +1,43 @@
-# Testimonial Slider
+# Testimonial slider
 
+Un slider de témoignages en deux slides : citation, auteur et photo, avec navigation par flèches.
 
-Slider de témoignages (quotes) en HTML / CSS / JS — solution du challenge « Coding Bootcamp Testimonials Slider » de Frontend Mentor. :contentReference[oaicite:0]{index=0}
+![Capture du slider de témoignages](./screenshot.jpg)
 
-## Démo en ligne
+**Démo : [el-cassegrain.github.io/testimonial-slider](https://el-cassegrain.github.io/testimonial-slider/)**
 
-[Visiter la démo](https://el-cassegrain.github.io/testimonial-slider/)  
-Affiche des citations avec transitions et navigation arrow. :contentReference[oaicite:1]{index=1}
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?logo=jquery&logoColor=white)
+![Slick](https://img.shields.io/badge/Slick_carousel-222222)
+
+## Contexte
+
+Solution du challenge « Coding Bootcamp Testimonials Slider » de [Frontend Mentor](https://www.frontendmentor.io).
 
 ## Fonctionnalités
 
-- Navigation avec flèches  
-- Animation de transition fluide  
-- Responsive (fonctionne sur mobile / tablette / desktop)  
-- Focus / hover sur les éléments interactifs  
+- Défilement entre les témoignages avec les flèches
+- Mise en page responsive : image au-dessus du texte sur mobile, côte à côte sur desktop
+- Décors de fond (courbe, motifs) positionnés en CSS pour coller à la maquette
+- Styles organisés en partials Sass (`_variables`, `_global`)
 
-## Technologies utilisées
+## Installation
 
-- HTML (structure)  
-- CSS (mise en forme, transitions)  
-- JavaScript pur (gestion du slider)  
+C'est un site statique, sans étape de build pour le JavaScript.
 
-## Installation & usage
+```bash
+git clone https://github.com/El-Cassegrain/testimonial-slider.git
+cd testimonial-slider
+pnpm dlx serve .
+```
 
-1. Cloner ce dépôt  
-   ```bash
-   git clone https://github.com/el-cassegrain/testimonial-slider.git
-   cd testimonial-slider
+Pour modifier les styles, recompile le Sass :
+
+```bash
+pnpm dlx sass --watch sources/scss/style.scss assets/css/style.css
+```
+
+---
+
+Réalisé par [Etienne Leriche](https://etienneleriche.com), designer UI/UX et développeur front-end.
